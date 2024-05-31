@@ -19,6 +19,11 @@ const Index = () => {
             Search Restaurants
           </Button>
         </Link>
+        <Link to="/order-tracking">
+          <Button colorScheme="teal" size="lg">
+            Track Your Order
+          </Button>
+        </Link>
       </VStack>
     </Container>
   );
