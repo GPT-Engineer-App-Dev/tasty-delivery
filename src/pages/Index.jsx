@@ -1,4 +1,5 @@
 import { Container, Text, VStack, Heading, Button, Image, Box } from "@chakra-ui/react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Index = () => {
   return (
@@ -13,9 +14,11 @@ const Index = () => {
         <Box boxSize="sm">
           <Image src="/images/food-delivery.jpg" alt="Food Delivery" />
         </Box>
-        <Button colorScheme="teal" size="lg">
-          Order Now
-        </Button>
+        <Link to="/search">
+          <Button colorScheme="teal" size="lg">
+            Search Restaurants
+          </Button>
+        </Link>
       </VStack>
     </Container>
   );
